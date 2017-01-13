@@ -208,10 +208,10 @@ a:hover {
 /********** HERO BANNER **********/
 
 .banner {
-    background: 
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
         url(images/banner-girl.png) no-repeat center 60px,
-        url(images/flower-bkgd.jpg) repeat-x top;
-    background-size: contain, cover;
+        url(images/flower-bkgd.jpg) repeat-x center top;
+    background-size: cover, contain, cover;
     height: 400px;
 }
 .banner-text {
