@@ -145,7 +145,14 @@ table {
 
 /*mobile first 480-600px*/ 
 
-/*small change for git*/
+/********** GENERAL **********/
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 body {
     font-size: 14px;
@@ -156,6 +163,34 @@ body {
 p {
     margin: 1rem;
 }
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+h2 {
+    font-family: 'playfair italic', 'Times New Roman', Times, serif;    
+    font-size: 2.2rem;
+    color: #2d2d2d;
+}
+.h2-bold {
+    font-family: 'playfair bold', 'Times New Roman', Times, serif;
+}
+.white {
+    color: #fff;
+}
+.shadow {
+    text-shadow: 1px 1px 2px #969696; 
+}
+.content {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+}
+a:hover {
+    color: #b64036;
+}
+
+/********** NAVIGATION **********/
+
 .logo {
     float: left;
     width: 15%;
@@ -168,45 +203,36 @@ p {
     min-width: 50px;
     padding: 15px;
 }
+
+
+/********** HERO BANNER **********/
+
 .banner {
     background: 
         url(images/banner-girl.png) no-repeat center 60px,
         url(images/flower-bkgd.jpg) repeat-x top;
     background-size: contain, cover;
-    height: 415px;
+    height: 400px;
 }
-/*.vertical-center {
-    display: table-cell;
-    vertical-align: middle;
+.banner-text {
+    padding: 9.4rem 0rem;
+    color: #fff;
     text-align: center;
-}*/
+} 
 .new {
     font-family: 'raleway regular', Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 18px;
-    color: #fff;
-    margin: 0 auto; 
+    font-size: 1.1rem;
 }
 .ss2016 {
     font-family: 'playfair regular', 'Times New Roman', Times, serif;;
-    text-align: center;
-    font-size: 38px;
-    color: #fff;
-    margin: 0 auto;
-    padding: 10px;
+    font-size: 2.2rem;
+    padding: 0.3rem;
 }
 
-.h2-bold {
-    font-family: 'playfair bold', 'Times New Roman', Times, serif;
-}
-.white {
-    color: #fff;
-}
-h2 {
-    font-family: 'playfair italic', 'Times New Roman', Times, serif;    
-    font-size: 30px;
-    color: #2d2d2d;
-}
+
+
+/********** ABOUT ALOHA **********/
+
 .hand-crafted {
     text-align: center;
     border-style: solid;
@@ -214,16 +240,12 @@ h2 {
     border-bottom-color: #d7d7d7;
     margin: 20px;
 }
-.content {
-    font-size: 1.1rem;
-    line-height: 2.2rem;
-}
+
+/********** PRODUCTS **********/
+
 .most-loved {
     text-align: center;
     margin: 20px;
-}
-.shadow {
-    text-shadow: 1px 1px 2px #969696; 
 }
 .product-category {
     font-size: 0.8rem;
@@ -236,25 +258,11 @@ h2 {
 .product-price {
     font-size: 1rem;
 }
-.mailto-link {
-    color: #fff;
-}
-.social-links {
-    color: #fff;
-}
-.footer-social a {
-    color: #fff;
-    text-decoration: none;
-}
-a:hover {
-    color: #b64036;
-}
-ul {
-    padding: 0;
-    list-style-type: none;
-}
+
+/********** NEWSLETTER **********/
+
 .sign-up {
-    background: url(images/wave-bkgd.jpg) no-repeat bottom;
+    background: url(images/wave-bkgd.jpg) no-repeat bottom center;
     background-size: cover;
     text-align: center;
     color: #fff;
@@ -277,6 +285,9 @@ input[type="button"] {
    font-family: 'raleway medium';
    font-size: 10pt;   
 }
+
+/********** FOOTER **********/
+
 footer {
     background-color: #242424;
     color: #fff;
@@ -296,11 +307,15 @@ footer {
     display: inline-block;
     padding: 0.4rem;
 }
-.clearfix:before,
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+.mailto-link {
+    color: #fff;
+}
+.social-links {
+    color: #fff;
+}
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
 }
 
 
