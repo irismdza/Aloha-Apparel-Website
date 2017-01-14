@@ -147,6 +147,9 @@ table {
 
 /********** GENERAL **********/
 
+* {
+    box-sizing: border-box;
+}
 .clearfix:before,
 .clearfix:after {
     content: "";
@@ -160,17 +163,22 @@ body {
     margin: 0 auto;
     font-family: 'raleway light', Arial, Helvetica, sans-serif;
 }
-p {
-    margin: 1rem;
+
+.container {
+    padding: 0% 2%;
+    width: 100%;
 }
+/*p {
+    margin: 1rem;
+}*/
 ul {
-    padding: 0;
     list-style-type: none;
 }
 h2 {
     font-family: 'playfair italic', 'Times New Roman', Times, serif;    
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #2d2d2d;
+    margin: 0rem 0rem 1.5rem 0rem;
 }
 .h2-bold {
     font-family: 'playfair bold', 'Times New Roman', Times, serif;
@@ -182,8 +190,9 @@ h2 {
     text-shadow: 1px 1px 2px #2d2d2d; 
 }
 .content {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 2.2rem;
+    text-align: center;
 }
 a:hover {
     color: #b64036;
@@ -207,8 +216,8 @@ a:hover {
 
 .banner {
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
-        url(images/banner-girl.png) no-repeat center 60px,
-        url(images/flower-bkgd.jpg) repeat-x center top;
+        url(images/banner-girl.png) center 60px no-repeat,
+        url(images/flower-bkgd.jpg) center top repeat-x;
     background-size: cover, contain, cover;
     height: 400px;
 }
@@ -236,15 +245,21 @@ a:hover {
     border-style: solid;
     border-width: 0px 0px 1px 0px;
     border-bottom-color: #d7d7d7;
-    margin: 20px;
+    padding: 3.5rem 0rem;
+    color: #2d2d2d;
 }
+/*.about-text {
+    margin: 5rem 0rem;
+    text-align: center;
+}*/
 
 /********** PRODUCTS **********/
 
 .most-loved {
     text-align: center;
-    margin: 20px;
+    padding: 3.5rem 0rem;
 }
+
 .product-category {
     font-size: 0.8rem;
 }
@@ -256,15 +271,24 @@ a:hover {
 .product-price {
     font-size: 1rem;
 }
+.most-loved li {
+    padding
+}
 
 /********** NEWSLETTER **********/
 
 .sign-up {
-    background: url(images/wave-bkgd.jpg) no-repeat bottom center;
-    background-size: cover;
+    background: url(images/wave-bkgd.jpg) center bottom no-repeat;
+    background-size: auto cover;
     text-align: center;
     color: #fff;
-    height: 345px;
+    height: 400px;
+}
+.email-form {
+    display: block;
+    margin: auto 0;
+    position: relative;
+    width: 80%;
 }
 input[type="email"] {
     border: none;
@@ -272,7 +296,10 @@ input[type="email"] {
     font-size: 13px;
     color: #969696;
     font-family: 'raleway light';
-    width: 
+    width: 100%;
+    border-radius: 3rem;
+    padding: 0.5rem 0.2rem;
+    position: relative;
 }
 input[type="button"] {
    border: none;
@@ -281,7 +308,10 @@ input[type="button"] {
    padding: 10px 20px;
    border-radius: 50px;
    font-family: 'raleway medium';
-   font-size: 10pt;   
+   font-size: 10pt; 
+   position: absolute;
+   right: 0.1rem;
+   top: 0.2rem;  
 }
 
 /********** FOOTER **********/
