@@ -165,7 +165,7 @@ h2 {
     font-family: 'playfair italic', 'Times New Roman', Times, serif;    
     font-size: 2rem;
     color: #2d2d2d;
-    margin: 0rem 0rem 1rem 0rem;
+    margin-bottom: 1.2rem;
 }
 .h2-bold {
     font-family: 'playfair bold', 'Times New Roman', Times, serif;
@@ -175,11 +175,6 @@ h2 {
 }
 .shadow {
     text-shadow: 1px 1px 2px #2d2d2d; 
-}
-.copy {
-    font-size: 1rem;
-    line-height: 2.2rem;
-    text-align: center;
 }
 a:hover {
     color: #b64036;
@@ -197,27 +192,19 @@ ul {
     clear: both;
 }
 
-
 /* * * * *  N A V I G A T I O N  * * * * */
 
 .nav {
-    padding: 2%;
+    padding: 1.4% 2.1%;
 }
-
 .logo {
     float: left;
-    width: 25%; /* 120px / 480px */
-    min-width: 120px;
-    max-width: 145px;
-
+    width: 120px;
 }
 .cart {
     float: right;
-    width: 10.416667%; /* 50px / 480px */
-    min-width: 50px;
-    max-width: 58px;
+    width: 50px;
 }
-
 
 /* * * * *  B A N N E R  * * * * */
 
@@ -244,23 +231,28 @@ ul {
     padding-top: 1.5rem;
 }
 
-
 /* * * * *  A B O U T  * * * * */
 
 .hand-crafted {
     text-align: center;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-bottom-color: #d7d7d7;
+    border-bottom: #d7d7d7 1px solid;
     padding: 3.5rem 0rem;
     color: #2d2d2d;
 }
-
+.copy {
+    font-size: 1rem;
+    line-height: 2.1rem;
+    margin: 0 auto;
+    width: 480px;
+}
 
 /* * * * *  P R O D U C T S  * * * * */
 
 .most-loved {
     text-align: center;
+    margin: 3.5rem 0rem;
+}
+.product-list {
     margin: 3.5rem 0rem;
 }
 .product-category {
@@ -274,13 +266,6 @@ ul {
 .product-price {
     font-size: 1rem;
 }
-.most-loved ul {
-    padding
-}
-/*.small-img {
-    width: 100%;
-}*/
-
 
 /* * * * *  N E W S L E T T E R  * * * * */
 
@@ -291,9 +276,11 @@ ul {
     text-align: center;
     color: #fff;
     height: 335px;
-}
-.sign-up-text {
-    padding: 4rem 0rem;
+    padding: 5rem 0rem;
+    }
+.sign-up-copy {
+    width: 700px;
+    margin: 0 auto;
 }
 .email-form {
     margin: 0 auto;
@@ -303,12 +290,12 @@ ul {
 }
 input[type="email"] {
     border: none;
-    background color: #fff;
+    background-color: #fff;
     font-size: 13px;
     color: #969696;
     font-family: 'raleway light';
     height: 42px;
-    width: 422px;
+    width: 450px;
     border-radius: 3rem;
     padding: 0.5rem 0.2rem;
 }
@@ -333,8 +320,6 @@ input[type="submit"]:hover {
 input[type="submit"]:focus {
     outline: none;
 }
-
-
 
 /* * * * *  F O O T E R  * * * * */
 
@@ -375,6 +360,7 @@ footer {
     display: none;
 }
 
+
 /* * * * * * * * * * * * * * * * * * * * * */
 /* * * * *  B R E A K P O I N T S  * * * * */
 /* * * * * * * * * * * * * * * * * * * * * */
@@ -382,6 +368,8 @@ footer {
 /* * * * *  T A B L E T  * * * * */
 
 @media (min-width: 600px) {
+
+    /* * * * *  general  * * * * */
     .container {
         padding: 0% 2%;
         width: 600px;
@@ -394,6 +382,9 @@ footer {
         font-size: 2.5rem;
         margin: 0rem 0rem 1rem 0rem;
     }
+
+    /* * * * *  banner  * * * * */
+
     .banner {
         background-size: cover, contain, contain;
     }
@@ -403,19 +394,19 @@ footer {
     .ss2016 {
         font-size: 2.2rem;
     }
+
+    /* * * * *  products  * * * * */
+
     .most-loved li {
         float: left;
         width: 50%;
+        margin: 2rem;
     }
 
-    
     /* * * * * *  footer  * * * * */
-
     footer {
-        background-color: #242424;
-        color: #fff;
-        font-family: 'playfair regular', 'Times New Roman', Times, serif;
-        margin: 8px 0px 0px 0px;
+        font-size: 16px;
+        padding: 2.5rem 0rem;
     }
     .footer-left {
         float: left;
@@ -423,29 +414,18 @@ footer {
     }
     .footer-right {
         float: right;
-        text-align: left;
     }
-    .footer-credit {
+    .credit {
         margin: 0.5rem;
     }
-    .footer-address {
+    .address {
         margin: 0.5rem;
         color: #969696;
     }
-    .footer-social li {
-        text-align: left;
+    .social li {
         display: block;
         padding: 0.5rem;
-    }
-    .mailto-link {
-        color: #fff;
-    }
-    .social-links {
-        color: #fff;
-    }
-    .footer-social a {
-        color: #fff;
-        text-decoration: none;
+        text-align: left;
     }
     .social-name {
         display: inline-block;
@@ -456,27 +436,111 @@ footer {
 /* * * * *  D E S K T O P  * * * * */
 
 @media (min-width: 1240px) {
+    /* * * * *  general  * * * * */
+
     .container {
         width: 1240px;
     }
+    body {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }    
     .banner {
         background-size: cover, 250px 615px, contain;
         height: 550px;
     }
-    .banner-text {
+    .centered-text {
         padding: 14rem 0rem;
-    } 
+    }  
+    .logo {
+        width: 160px;
+    }
+    .cart {
+        width: 62px;
+    }
+
+    /* * * * *  banner  * * * * */
     .new {
         font-size: 1.3rem;
     }
     .ss2016 {
         font-size: 4rem;
-        padding-top: 1.5rem;
+        padding-top: 1.4rem;
     }
-    .most-loved li {
+
+    /* * * * *  about  * * * * */
+
+    .hand-crafted {
+        padding: 4rem 0rem;
+        color: #2d2d2d;
+    }
+    .copy {
+        font-size: 1.143rem;
+        line-height: 2.2rem;
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    /* * * * *  products  * * * * */
+
+    .product-list li {
         width: 25%;
+        margin: 0 auto;        
     }
-    .small-img {
-        width: 80%;
+    .product-list {
+        margin: 3.5rem 10rem;
     }
+    .product-heading {
+        font-size: 1.5rem;
+    }
+
+    /* * * * *  newsletter  * * * * */
+    .sign-up {
+        padding: 3.5rem;
+    }
+    input[type="email"] {
+        font-size: 16px;
+        height: 48px;
+        width: 450px;
+        padding: 0.5rem 1.75rem;
+        padding-right: 150px;
+    }
+    input[type="submit"] {
+        font-size: .9rem; 
+        position: absolute;
+        right: 19.7rem;
+        top: 0.25rem;  
+        width: 122px;
+        height: 40px;
+        }
+    input[type="submit"] {
+        cursor: pointer;
+    }
+
+     /* * * * * *  footer  * * * * */ 
+    footer {
+        padding: 4rem 0rem;
+    } 
+    .footer-left {
+        float: left;
+        text-align: left;
+        line-height: 1.5rem;
+    }
+    .footer-right {
+        float: right;
+        text-align: left;
+        padding-right: 4rem;
+        line-height: 0.7rem;
+    }
+    .social-name {
+        display: inline-block;
+        padding-left: 0.7rem;
+    }
+}
+
+
+
 }
