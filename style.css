@@ -195,14 +195,15 @@ ul {
 /* * * * *  N A V I G A T I O N  * * * * */
 
 .nav {
-    padding: 1.4% 2.1%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 80px;
 }
 .logo {
-    float: left;
     width: 120px;
 }
 .cart {
-    float: right;
     width: 50px;
 }
 
@@ -214,12 +215,13 @@ ul {
         url(images/flower-bkgd.jpg) center top repeat-x;
     background-size: cover, contain, cover;
     height: 400px;
-}
-.centered-text {
-    padding: 10rem 0rem;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-} 
+}
 .new {
     font-family: 'raleway medium', Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
@@ -234,23 +236,26 @@ ul {
 /* * * * *  A B O U T  * * * * */
 
 .hand-crafted {
-    text-align: center;
     border-bottom: #d7d7d7 1px solid;
     padding: 3.5rem 0rem;
     color: #2d2d2d;
-}
-.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-size: 1rem;
     line-height: 2.1rem;
-    margin: 0 auto;
-    width: 480px;
 }
 
 /* * * * *  P R O D U C T S  * * * * */
 
 .most-loved {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin: 3.5rem auto;
+    padding: 3.5rem 0rem;
 }
 .product-list img {
     max-width: 100%;
@@ -280,14 +285,15 @@ ul {
     background: linear-gradient( to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.15) 100% ),
         url(images/wave-bkgd.jpg) center bottom no-repeat;
     background-size: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: #fff;
     height: 335px;
     padding: 5rem 0rem;
-    }
-.sign-up-copy {
-    width: 700px;
-    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 2.1rem;
 }
 .email-form {
     margin: 0 auto;
@@ -335,33 +341,47 @@ footer {
     background-color: #242424;
     color: #fff;
     font-family: 'playfair regular', 'Times New Roman', Times, serif;
-    text-align: center;
     margin: 8px 0px 0px 0px;
     padding: 3.5rem 0rem;
     line-height: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-.credits {
-    margin-bottom: 1rem;
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.credits,
 .contact {
     margin-bottom: 1rem;
 }
-
+.contact a {
+    color: #fff;
+}
 .address {
-    margin-bottom: 1.5rem;
     color: #969696;
+    margin-bottom: 2rem;
 }
-.social li {
-    text-align: center;
-    display: inline-block;
-    padding: 0.4rem;
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-.mailto-link {
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin: 0;
+}
+.social-links a {
     color: #fff;
-}
-.social a {
-    color: #fff;
-    text-decoration: none;
 }
 .social-name {
     font-family: 'raleway light', Arial, Helvetica, sans-serif;
@@ -403,11 +423,19 @@ footer {
     }
 
     /* * * * *  products  * * * * */
-    .product-list li {
-        float: left;
-        width: 50%;    
+    .product-list ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 3.5rem 0rem;
     }
-
+    .product-list .item {
+        width: 50%;
+    }
+    
     /* * * * * *  footer  * * * * */
     footer {
         font-size: 16px;
@@ -427,7 +455,7 @@ footer {
         margin: 0.5rem;
         color: #969696;
     }
-    .social li {
+    .social-links li {
         display: block;
         padding: 0.5rem;
         text-align: left;
@@ -489,12 +517,8 @@ footer {
         margin: 0 auto;
     }
 
-    /* * * * *  most-loved  * * * * */
-
-    .product-list {
-        margin: 3.5rem 10rem;
-    }
-    .product-list li {
+    /* * * * *  products  * * * * */
+    .product-list .item {
         width: 25%;
     }
     .product-heading {
@@ -526,15 +550,15 @@ footer {
         padding: 4rem 0rem;
     } 
     .footer-left {
-        float: left;
-        text-align: left;
-        line-height: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
     }
     .footer-right {
-        float: right;
-        text-align: left;
-        padding-right: 4rem;
-        line-height: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
     .social-name {
         display: inline-block;

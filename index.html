@@ -7,15 +7,13 @@
         <script src="https://use.fontawesome.com/19742803fc.js"></script>    </head>
     <body>
         <h1 class="hide">Aloha Apparel Co.</h1>
-        <header class="nav clearfix">
+        <header class="nav">
                 <img src="images/aloha-logo.svg" alt="Aloha Apparel Co." class="logo">
                 <img src="images/cart-icon.svg" alt="Shopping Cart" class="cart">
         </header>
         <section class="banner">
-            <div class="centered-text">
-                <p class="new shadow">New Collection</p>
-                <p class="ss2016 shadow">Spring/Summer 2016</p>
-            </div>
+            <p class="new shadow">New Collection</p>
+            <p class="ss2016 shadow">Spring/Summer 2016</p>
         </section>
         <section class="hand-crafted">
             <div class="container">
@@ -26,28 +24,28 @@
             </div>
         </section>
         <section class="most-loved">
-            <div class="container">
-                <h2>Most-Loved <span class="h2-bold">Products</span></h2>
-                <ul class="product-list clearfix">
-                    <li>
+            <h2>Most-Loved <span class="h2-bold">Products</span></h2>
+            <div class="product-list">
+                <ul>
+                    <li class="item">
                         <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress" />
                         <p class="product-category">Dresses</p>
                         <h3 class="product-heading">Stretch Knit Dress</h3>
                         <p class="product-price">$169.00</p>
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt" />
                         <p class="product-category">Shirts</p>
                         <h3 class="product-heading">Cotton Blue Shirt</h3>
                         <p class="product-price">$89.00</p>
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress" />
                         <p class="product-category">Dresses</p>
                         <h3 class="product-heading">Checked Stretch Dress</h3>
                         <p class="product-price">$129.00</p>
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack" />
                         <p class="product-category">Bags</p>
                         <h3 class="product-heading">Blue Hipster Backpack</h3>
@@ -69,41 +67,50 @@
             </div>
         </section>
         <footer>
-            <div class="container clearfix">
                 <div class="footer-left">
                     <div class="credits">
                         <p>&copy; 2016 Aloha Apparel Co.</p>
-                        <p>Powered by HTML & CSS.</p>
+                        <p>Powered by HTML and CSS.</p>
                     </div>
                     <div class="contact">
-                        <p>604-604-6040. <a class="mailto-link" href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p> 
+                        <p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p> 
                     </div>
                     <div class="address">
                         <p>1490 W Broadway</p>
                         <p>Vancouver, BC, Canada</p>
                     </div>
                 </div>
-                <div class="footer-right">
-                    <ul class="social">
+                <div class="footer-social">
+                    <ul class="social-links">
                         <li>
-                            <i class="fa fa-facebook" aria-hidden="true"></i> 
-                            <span class="social-name">Facebook</span>
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i> 
+                                <span class="social-name">Facebook</span>
+                            </a>
                         </li>
                         <li>
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <span class="social-name">Twitter</span>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="social-name">Twitter</span>
+                            </a>
                         </li>
                         <li>
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="social-name">Instagram</span>
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="social-name">Instagram</span>
+                            </a>
                         </li>
                         <li>
-                            <i class="fa fa-pinterest" aria-hidden="true"></i>
-                            <span class="social-name">Pinterest</span>
+                            <a href="">
+                                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                <span class="social-name">Pinterest</span>
+                            </a>
                         </li>
                         <li>
-                            <i class="fa fa-google-plus" aria-hidden="true"></i>
-                            <span class="social-name">Google+</span>
+                            <a href="">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                <span class="social-name">Google+</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
