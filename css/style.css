@@ -233,7 +233,35 @@ ul {
     line-height: 2.1rem;
 }
 
-/* * * * *  P R O D U C T S  * * * * */
+
+/* * * * *  S H O P  * * * * */
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.category-wide {
+    flex: 2 0 100%;
+    max-width: 100%;
+    border: 4px solid #fff;
+    border-left: 0;
+    border-right: 0;
+}
+
+.category-square {
+    flex: 1 0 50%;
+    max-width: 100%;
+    border: 4px solid #fff;
+}
+.mens {
+background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url(../images/mens-category.jpg) no-repeat center center;
+background-size: cover, cover;
+
+}
+
+/* * * * *  M O S T - L O V E D  * * * * */
 
 .most-loved {
     display: flex;
@@ -352,19 +380,18 @@ footer {
     color: #969696;
     margin-bottom: 2rem;
 }
-.footer-social {
+.social {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .social-links {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     width: 25%;
-    margin: 0;
+    margin: 0 auto;
 }
 .social-links a {
     color: #fff;
@@ -386,7 +413,7 @@ footer {
     /* * * * *  general  * * * * */
     .container {
         padding: 0% 2%;
-        width: 600px;
+        width: 100%;
         margin: 0 auto;
     }
     body {
@@ -395,6 +422,29 @@ footer {
     h2 {
         font-size: 2.5rem;
         margin: 0rem 0rem 1rem 0rem;
+    }
+    /* * * * * header * * * * */
+    .navigation-bar {
+        flex-wrap: nowrap;
+    }
+    .navigation-menu {
+        border: 0;
+    }
+    .navigation-menu ul {
+        align-items: center;
+        text-align: center;
+    }
+    .logo {
+        order: 1;
+        flex: 0 1 20%;
+    }
+    .cart { 
+        order: 3;
+        flex: 0 1 20%;
+    }
+    .nav {
+        order: 2;
+        font-size: 14px;
     }
 
     /* * * * *  banner  * * * * */
@@ -408,7 +458,7 @@ footer {
         font-size: 2.2rem;
     }
 
-    /* * * * *  products  * * * * */
+    /* * * * *  most-loved  * * * * */
     .product-list ul {
         display: flex;
         flex-direction: row;
@@ -431,29 +481,23 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
-    footer {
         padding: 4rem 0rem;
     } 
     .footer-left {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        /*align-items: stretch;*/
-    }
-    .footer-right {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
     }
     .social-name {
         display: inline-block;
         padding-left: 0.7rem;
     }
-
-    .footer-left {
+    .footer-columns {
+        display: flex;
+        justify-content: space-between;   
     }
-    .footer-social {
+    .social i {
+        width: 25px;
     }
     .credit {
         margin: 0.5rem;
@@ -464,16 +508,15 @@ footer {
     }
     .social-links a {
         display: flex;
-        width: 150px; 
-        text-decoration: none;       
+        text-decoration: none;  
     }
     .social-links {
-        display: block;
-        padding: 0.5rem;
-        text-align: left;
-    }
-    .social-name {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        height: 148px;
+        width: 17%;
+        margin: 0;
     }
 }
 
@@ -484,7 +527,7 @@ footer {
 
     /* * * * *  general  * * * * */
     .container {
-        width: 1240px;
+        width: 100%;
     }
     body {
         font-size: 16px;
@@ -505,6 +548,12 @@ footer {
     }
     .cart {
         width: 62px;
+    }
+
+    /* * * * * navigation * * * * */
+    .nav {
+        font-size: 16px;
+        padding-top: 0.5rem;
     }
 
     /* * * * *  banner  * * * * */
@@ -529,7 +578,7 @@ footer {
         margin: 0 auto;
     }
 
-    /* * * * *  products  * * * * */
+    /* * * * *  most-loved  * * * * */
     .product-list .item {
         width: 25%;
     }
@@ -537,26 +586,9 @@ footer {
         font-size: 1.5rem;
     }
 
-    /* * * * *  newsletter  * * * * */
-    
-
-     /* * * * * *  footer  * * * * */ 
-    /*footer {
-        padding: 4rem 0rem;
-    } 
-    .footer-left {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
+    /* * * * * footer * * * * */
+    .social-links ul {
+        margin: 0;
+        width: 10%;
     }
-    .footer-right {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    .social-name {
-        display: inline-block;
-        padding-left: 0.7rem;
-    }*/
 }

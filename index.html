@@ -12,21 +12,19 @@
 
 <body>
     <h1 class="hide">Aloha Apparel Co.</h1>
-    <header>
-        <div class="navigation-bar">
-            <div class="logo"><img src="images/aloha-logo.svg" alt="Aloha Apparel Co." class="logo"></div>
-            <div class="cart"><img src="images/cart-icon.svg" alt="Shopping Cart" class="cart"></div>
-            <nav class ="nav">
-                <ul class="navigation-menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#featured">Featured</a></li>
-                    <li><a href="#updates">Updates</a></li>
-                 </ul>
-            </nav>
-        </div>
+    <header class="navigation-bar">
+        <div class="logo"><img src="images/aloha-logo.svg" alt="Aloha Apparel Co." class="logo"></div>
+        <div class="cart"><img src="images/cart-icon.svg" alt="Shopping Cart" class="cart"></div>
+        <nav class="nav">
+            <ul class="navigation-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#updates">Updates</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
     <section class="banner">
         <p class="new shadow">New Collection</p>
         <p class="ss2016 shadow">Spring/Summer 2016</p>
@@ -39,6 +37,27 @@
             </p>
         </div>
     </section>
+
+    <section class="shop">
+        <div class="categories">
+            <div class="category-wide mens">
+                <span class="category-name">Men's</span>
+            </div>
+            <div class="category-square trends">
+                <span class="category-name">Trends</span>
+            </div>
+            <div class="category-square glasses">
+                <span class="category-name">Glasses</span>
+            </div>
+            <div class="category-square sale">
+                <span class="category-name">Sale</span>
+            </div>
+            <div class="category-square bags">
+                <span class="category-name">Bags</span>
+            </div>
+            <div class="category-wide womens'">
+                <span class="category-name">Women's</span>
+            </div>
 
     <section class="most-loved">
         <h2>Most-Loved <span class="h2-bold">Products</span></h2>
@@ -84,21 +103,21 @@
         </div>
     </section>
     <footer>
-        <div class="footer-left container">
-            <div>
-                <p>&copy; 2016 Aloha Apparel Co.</p>
-                <p>Powered by HTML and CSS.</p>
+        <div class="container footer-columns">
+            <div class="footer-left">
+                <div>
+                    <p>&copy; 2016 Aloha Apparel Co.</p>
+                    <p>Powered by HTML and CSS.</p>
+                </div>
+                <div class="contact">
+                    <p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
+                </div>
+                <div class="address">
+                    <p>1490 W Broadway</p>
+                    <p>Vancouver, BC, Canada</p>
+                </div>
             </div>
-            <div class="contact">
-                <p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
-            </div>
-            <div class="address">
-                <p>1490 W Broadway</p>
-                <p>Vancouver, BC, Canada</p>
-            </div>
-        </div>
-        <div class="footer-social">
-            <ul class="social-links">
+            <ul class="social social-links">
                 <li>
                     <a href="">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -130,7 +149,6 @@
                     </a>
                 </li>
             </ul>
-        </div>
         </div>
     </footer>
     <script src="jquery-3.1.1.min.js"></script>
