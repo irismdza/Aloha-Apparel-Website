@@ -314,6 +314,11 @@ background-size: cover, cover;
     text-align: center;
     padding: 3.5rem 0rem;
 }
+.item-wrapper {
+    text-align: center;
+    width: 100%;
+    padding: 3rem 2rem;
+}
 .product-list img {
     max-width: 100%;
     height: auto;
@@ -501,18 +506,30 @@ footer {
         font-size: 2.2rem;
     }
 
-    /* * * * *  most-loved  * * * * */
-    .product-list ul {
+    /* * * * * shop * * * * */
+    .categories {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        text-align: center;
-        padding: 3.5rem 0rem;
     }
-    .product-list .item {
-        width: 50%;
+    .category-wide {
+        max-width: 50%;
+    }
+    .category-square {
+        max-width: 25%;
+    }
+    .mens {
+        border-right: 4px solid #fff;
+    }
+    .trends {
+        border-left: 4px solid #fff;
+    }
+    .glasses {
+        border-right: 0;
+    }
+    .bags {
+        border-right: 4px solid #fff;
+    }
+    .womens {
+        border-left: 4px solid #fff;
     }
 
     /* * * * * *  footer  * * * * */
