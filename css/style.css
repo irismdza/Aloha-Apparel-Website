@@ -146,6 +146,24 @@ ul {
     clear: both;
 }
 
+.screen-reader-text {
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+}
+
+.screen-reader-text:focus {
+   clip: auto;
+   display: block;
+   height: auto;
+   left: 5px;
+   top: 5px;
+   width: auto;
+   z-index: 100000; /* above all content */
+}
+
 /* * * * *  N A V I G A T I O N  * * * * */
 
 .navigation-bar {
