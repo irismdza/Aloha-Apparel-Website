@@ -450,6 +450,11 @@ footer {
 .contact a {
     color: #fff;
 }
+
+.copyright:before{
+  content: '\00a9';
+}
+
 .address {
     color: #969696;
     margin-bottom: 2rem;
