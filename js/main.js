@@ -1,6 +1,6 @@
 $(function() {
 
-    /* * * * * smooth scrolling * * * * */
+    // smooth scrolling
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -14,14 +14,14 @@ $(function() {
         }
     });
 
-    /* * * * * email form * * * * */
+    // email form
     $('.email-form').on("submit", function(event) {
         event.preventDefault()
         if($('#email').val()){
-            alert('You still suck');
+            alert('Thank you for subscribing!');
         }
         else {
-            alert('you suck');
+            alert('Please submit a valid email address.');
         }
     });
 });

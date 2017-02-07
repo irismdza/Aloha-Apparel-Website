@@ -86,7 +86,7 @@ body {
 }
 h2 {
     font-family: 'playfair italic', 'Times New Roman', Times, serif;    
-    font-size: 2rem;
+    font-size: 2.12rem;
     color: #2d2d2d;
     margin-bottom: 1.2rem;
 }
@@ -97,7 +97,7 @@ h2 {
     color: #fff;
 }
 .shadow {
-    text-shadow: 1px 1px 2px #2d2d2d; 
+    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
 }
 a:hover {
     color: #b64036;
@@ -105,7 +105,7 @@ a:hover {
 ul {
     list-style-type: none;
 }
-.hide {
+.screen-reader {
     display: none;  
 }
 .screen-reader-text {
@@ -208,7 +208,7 @@ ul {
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), 
         url(../images/banner-girl.png) center 60px no-repeat,
         url(../images/flower-bkgd.jpg) center top repeat-x;
-    background-size: cover, contain, cover;
+    background-size: cover, 150px 369px, cover;
     height: 400px;
     color: #fff;
     display: -webkit-box;
@@ -326,7 +326,7 @@ background-size: cover, cover;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
     position: absolute;
-    top: 50%;
+    top: 46%;
 }
 .category-name a {
     color: #fff;
@@ -364,7 +364,7 @@ background-size: cover, cover;
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    padding: 3.5rem 0rem;
+    padding: 4rem 0;
 }
 .item-wrapper {
     text-align: center;
@@ -373,8 +373,9 @@ background-size: cover, cover;
 }
 .product-category {
     font-family: 'raleway medium', Arial, Helvetica, sans-serif;
-    font-size: 0.75rem;
+    font-size: .65rem;
     margin-bottom: 1rem;
+    margin-top: .8rem;
     text-transform: uppercase;
 }
 .product-heading {
@@ -385,10 +386,11 @@ background-size: cover, cover;
 }
 .product-price {
     font-family: 'raleway medium', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: .85rem;
 }
 .carousel-cell {
     width:100%;
+    padding: 3rem 2rem;
 }
 .carousel {
     width:100%;
@@ -416,8 +418,7 @@ img {
             justify-content: center;
     text-align: center;
     color: #fff;
-    height: 335px;
-    padding: 5rem 0rem;
+    padding: 4rem 0rem;
     font-size: 1rem;
     line-height: 2.1rem;
 }
@@ -430,14 +431,14 @@ img {
 input[type="email"] {
     border: 16px solid #fff ;
     background-color: #fff;
-    font-size: 13px;
+    font-size: .9rem;
     color: #969696;
     font-family: 'raleway light';
     height: 42px;
     width: 100%;
     border-radius: 3rem;
     padding: 0.5rem 0.2rem;
-    padding-right: 135px;
+    padding-right: 150px;
 }
 input[type="email"]:focus,hover,active {
     outline: none;
@@ -484,6 +485,7 @@ footer {
     text-align: center;
 }
 .footer-left {
+    line-height: 1.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -614,6 +616,9 @@ footer {
     }
 
     /* * * * *  about  * * * * */
+    .hand-crafted {
+        padding: 4.2rem 0rem;
+    }
     .copy {
         font-size: 1.15rem;
         max-width: 720px;
@@ -637,6 +642,9 @@ footer {
                 flex: 1 0 25%;
         padding-top: 25%;
     }
+    .category-name {
+        font-size: 1.75rem;
+    }
     .mens {
         border-right: 4px solid #fff;
     }
@@ -654,14 +662,25 @@ footer {
     }
 
     /* * * * * *  most - loved  * * * * */
+    .most-loved {
+        padding: 4.5rem 0;
+    }
     .carousel-cell {
-    width:50%;
+        width: 50%;
+    }
+    .product-category {
+        font-size: .75rem;
+    }
+    .product-heading {
+        font-size: 1.5rem;
+    }
+    .product-price {
+        font-size: 1rem;
     }
 
     /* * * * * *  footer  * * * * */
     footer {
         font-size: 16px;
-        padding: 2.5rem 0rem;
         text-align: left;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -676,7 +695,7 @@ footer {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        padding: 4rem 0rem;
+        /*padding: 3.5rem 0rem;*/
     } 
     .footer-left {
         display: -webkit-box;
@@ -730,7 +749,8 @@ footer {
                 align-items: space-between;
         height: 148px;
         width: 17%;
-        margin: 0;
+        margin-right: 2rem;
+        padding-right: 2rem;
     }
 }
 
@@ -791,13 +811,19 @@ footer {
         width: 700px;
         margin: 0 auto;
     }
+    
+    /* * * * *  shop  * * * * */
+    .category-name {
+        font-size: 2.4rem;
+    }
+
 
     /* * * * *  most-loved  * * * * */
     .carousel-cell {
         width: 25%;
     }
-    img {
-        width: 75%;
+    .carousel img {
+        min-width: 75%;
     }
     .product-heading {
         font-size: 1.5rem;
@@ -806,6 +832,6 @@ footer {
     /* * * * * footer * * * * */
     .social-links ul {
         margin: 0;
-        width: 10%;
+        /*width: 10%;*/
     }
 }
