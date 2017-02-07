@@ -1,7 +1,6 @@
 $(function() {
 
-/* * * * * smooth scrolling * * * * */
-//$(function() {
+    /* * * * * smooth scrolling * * * * */
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -14,34 +13,18 @@ $(function() {
             }
         }
     });
-//});
 
-/* * * * * flickity * * * * */
-
-//$(function() {
-    $('.product-list').flickity( {
-        // options
-        cellAlign: 'left',
-        contain: true,
-     //   percentPosition: false,
-       // imagesLoaded: true,
-        autoPlay: true,
-        prevNextButtons: false,
-        wrapAround: true,
-        });
-    });
-//});
-
-/* * * * * email form * * * * */
-
-// $(function() {
-    $('#subscribe').on('click', 'button', function(event) {
-        event.preventDefault();
-        if ($emailInput.val().length !== 5 ) {
-            alert('Thanks for subscribing!');
-            $emailInput.val('');
-        } else {
-            alert('Please submit a valid email address.');
+    /* * * * * email form * * * * */
+    $('.email-form').on("submit", function(event) {
+        event.preventDefault()
+        if($('#email').val()){
+            alert('You still suck');
+        }
+        else {
+            alert('you suck');
         }
     });
-//});
+});
+
+
+
