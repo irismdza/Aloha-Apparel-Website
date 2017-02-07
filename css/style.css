@@ -793,8 +793,11 @@ footer {
     }
 
     /* * * * *  most-loved  * * * * */
-    .product-list .item {
+    .carousel-cell {
         width: 25%;
+    }
+    img {
+        width: 75%;
     }
     .product-heading {
         font-size: 1.5rem;
