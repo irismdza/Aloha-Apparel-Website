@@ -17,7 +17,7 @@ $(function() {
     // email form
     $('.email-form').on("submit", function(event) {
         event.preventDefault()
-        if($('#email').val()){
+        if($('#email').val().length > 5){
             alert('Thank you for subscribing!');
         }
         else {
